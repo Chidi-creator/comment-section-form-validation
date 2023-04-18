@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comment-section">
+        <h1 class="comment-reply-title">Write your comment!</h1>
+        <form action="#" id="commentform" class="comment-form">
+            <div class="comment-form-name">
+                <input type="text" id="name" placeholder="First Name *" name="name" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                <label for="name"  data-help="Don't you know your name?">First Name</label>
+            </div>
+            <div class="comment-form-surname">
+                <input type="text" name="surname" id="surname" placeholder="Surname *" value="" size="30" maxlength="245" pattern="^[^0-9]+$"  required>
+                <label for="surname" data-help="Enter your Last name">Surname</label>
+            </div>
+                <div class="comment-form-email">
+                    <input type="email" name="email" id="email" placeholder="Email*" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+                    <label for="email" data-help="Format: you@example.com">Email</label>
+                </div>
+                <div class="comment-form-url">
+                    <input type="url" name="url" id="url" value="" size="30" placeholder="Website" maxlength="200">
+                    <label for="url" data-help="Should start with http:// o https://">Website</label>
+                </div>
+                <div class="comment-form-comment">
+                    <textarea name="comment" id="comment" cols="45" rows="8" maxlength="65525" required placeholder="Comment"></textarea>
+                    <label for="comment" data-help="Express your feelings">Comment</label>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Post Comment" name="submit" id="submit" class="submit">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
